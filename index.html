@@ -9,7 +9,8 @@
 
 </head>
 <body>
-  <audio src="Audio/JarabeDePalo-LaFlaca.mp3" autoplay></audio>
+  <img src="LAFLACAPORTADA.jpg" alt="Portada de La Flaca" class="imagen-portada">
+  <audio id="musica" src="Audio/JarabeDePalo-LaFlaca.mp3" loop controls></audio>
   <!-- partial:index.partial.html -->
 <body class="not-loaded">
   
@@ -310,6 +311,12 @@
       </div>
     </div>
   </div>
+    <script>
+    // Espera 3 segundos y luego quita la clase
+    setTimeout(() => {
+      document.body.classList.remove('not-loaded');
+    }, 3000);
+  </script>
 </body>
 <!-- partial -->
   <script  src="./script.js"></script>
